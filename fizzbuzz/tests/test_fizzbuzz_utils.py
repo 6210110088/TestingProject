@@ -19,3 +19,9 @@ class FizzBuzzTest(unittest.TestCase):
         expected_result = 'FizzBuzz'
         result = fizzbuzz(number)
         self.assertEqual(result, expected_result)
+
+    def test_give_30_is_fizzbuzz(self):
+        number = 30
+        expected_result = 'FizzBuzz'
+        result = fizzbuzz(number)
+        self.assertEqual(result, expected_result)
