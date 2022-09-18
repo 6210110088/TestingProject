@@ -38,4 +38,4 @@ jobs:
     - name: Testing Codes
       run: |
         pip install nose2 coverage
-        nose2 -v --with-coverage --coverage superfizzbuzz.superfizzbuzz_utils tests.test_superfizzbuzz_utils
+        nose2 -v --with-coverage --coverage super_fizzbuzz.superfizzbuzz.superfizzbuzz_utils super_fizzbuzz.tests.test_superfizzbuzz_utils
