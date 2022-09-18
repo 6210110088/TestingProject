@@ -51,11 +51,11 @@ def checkfizzbuzz(num: int):
     conditions = [
         Fizz(num),
         Buzz(num),
+        FizzBuzz(num),
         FizzFizz(num),
         BuzzBuzz(num),
-        FizzBuzz(num),
         FizzFizzBuzzBuzz(num),
-        SuperFizzBuzz(num)
+        SuperFizzBuzz(num),
     ]
 
     result = ''

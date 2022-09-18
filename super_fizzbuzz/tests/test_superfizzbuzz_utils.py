@@ -67,3 +67,33 @@ class FizzBuzzTest(unittest.TestCase):
         expected_result = 'BuzzBuzz'
         result = checkfizzbuzz(num)
         self.assertEqual(result, expected_result)
+
+    def test_give_135_is_fizzfizz(self):
+        num = 135
+        expected_result = 'FizzFizz'
+        result = checkfizzbuzz(num)
+        self.assertEqual(result, expected_result)
+
+    def test_give_45_is_fizzfizz(self):
+        num = 45
+        expected_result = 'FizzFizz'
+        result = checkfizzbuzz(num)
+        self.assertEqual(result, expected_result)
+
+    def test_give_75_is_buzzbuzz(self):
+        num = 75
+        expected_result = 'BuzzBuzz'
+        result = checkfizzbuzz(num)
+        self.assertEqual(result, expected_result)
+
+    def test_give_375_is_buzzbuzz(self):
+        num = 375
+        expected_result = 'BuzzBuzz'
+        result = checkfizzbuzz(num)
+        self.assertEqual(result, expected_result)
+
+    def test_give_3375_is_fizzfizzbuzzbuzz(self):
+        num = 3375
+        expected_result = 'FizzFizzBuzzBuzz'
+        result = checkfizzbuzz(num)
+        self.assertEqual(result, expected_result)
