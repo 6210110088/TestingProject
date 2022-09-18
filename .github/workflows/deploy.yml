@@ -35,9 +35,24 @@ jobs:
 #     run: |
 #       pylint -d C0301 sample/*.py
       
-    - name: Testing Codes FizzBuzz
+    - name: Testing Codes
       run: |
         pip install nose2 coverage
+
+    - name: Testing FizzBuzz
+      run: |
         cd fizzbuzz
+        nose2 -v --with-coverage
+        cd ..
+        
+    - name: Testing SuperFizzBuzz
+      run: |
+        cd super_fizzbuzz
+        nose2 -v --with-coverage
+        cd ..
+
+    - name: Testing number
+      run: |
+        cd number
         nose2 -v --with-coverage
         cd ..
