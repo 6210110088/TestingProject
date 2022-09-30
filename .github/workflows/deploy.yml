@@ -42,3 +42,21 @@ jobs:
         cd number
         nose2 -v --with-coverage
         cd ..
+        
+    - name: Testing FunnyString
+      run: |
+        cd funnystring
+        nose2 -v --with-coverage
+        cd ..
+        
+    - name: Testing AlternatingChar
+      run: |
+        cd alternatingchar
+        nose2 -v --with-coverage
+        cd ..
+        
+    - name: Testing CaesarCipher
+      run: |
+        cd caesarcipher
+        nose2 -v --with-coverage
+        cd ..
