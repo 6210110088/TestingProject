@@ -25,3 +25,15 @@ class GridChallengeTest(unittest.TestCase):
         expected_result = 'YES'
         result = gridChallenge(grid)
         self.assertEqual(result, expected_result)
+
+    def test_give_p_is_YES(self):
+        grid = ['p']
+        expected_result = 'YES'
+        result = gridChallenge(grid)
+        self.assertEqual(result, expected_result)
+
+    def test_give_rpb_hot_qra_is_NO(self):
+        grid = ['rpb', 'hot', 'qra']
+        expected_result = 'NO'
+        result = gridChallenge(grid)
+        self.assertEqual(result, expected_result)
