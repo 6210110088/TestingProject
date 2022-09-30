@@ -1,6 +1,5 @@
 from funnystring.funnystring_utils import *
 import unittest
-from unittest import mock
 
 class FunnyStringTest(unittest.TestCase):
     def test_give_acxz_is_funny(self):
