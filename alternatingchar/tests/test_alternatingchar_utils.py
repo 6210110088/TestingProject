@@ -31,3 +31,33 @@ class AlternatingCharTest(unittest.TestCase):
         expected_result = 4
         result = alternatingCharacters(text)
         self.assertEqual(result, expected_result)
+
+    def test_give_AAAA_is_3(self):
+        text = 'AAAA'
+        expected_result = 3
+        result = alternatingCharacters(text)
+        self.assertEqual(result, expected_result)
+
+    def test_give_BBBBB_is_4(self):
+        text = 'BBBBB'
+        expected_result = 4
+        result = alternatingCharacters(text)
+        self.assertEqual(result, expected_result)
+
+    def test_give_ABABABAB_is_0(self):
+        text = 'ABABABAB'
+        expected_result = 0
+        result = alternatingCharacters(text)
+        self.assertEqual(result, expected_result)
+
+    def test_give_BABABA_is_0(self):
+        text = 'BABABA'
+        expected_result = 0
+        result = alternatingCharacters(text)
+        self.assertEqual(result, expected_result)
+
+    def test_give_AAABBB_is_4(self):
+        text = 'AAABBB'
+        expected_result = 4
+        result = alternatingCharacters(text)
+        self.assertEqual(result, expected_result)
