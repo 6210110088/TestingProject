@@ -37,3 +37,9 @@ class TwoCharTest(unittest.TestCase):
         expected_result = 2
         result = alternate(text)
         self.assertEqual(result, expected_result)
+
+    def test_give_aaaa_is_0(self):
+        text = 'aaaa'
+        expected_result = 0
+        result = alternate(text)
+        self.assertEqual(result, expected_result)
