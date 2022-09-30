@@ -10,3 +10,11 @@ class CatandMouseTest(unittest.TestCase):
         expected_output = 'Cat B'
         result = cat_mouse(var_x, var_y, var_z)
         self.assertEqual(result, expected_output)
+
+    def test_give_1_3_2_should_be_MouseC(self):
+        var_x = 1
+        var_y = 3
+        var_z = 2
+        expected_output = 'Mouse C'
+        result = cat_mouse(var_x, var_y, var_z)
+        self.assertEqual(result, expected_output)
