@@ -18,3 +18,19 @@ class CatandMouseTest(unittest.TestCase):
         expected_output = 'Mouse C'
         result = cat_mouse(var_x, var_y, var_z)
         self.assertEqual(result, expected_output)
+
+    def test_give_5_9_6_should_be_CatA(self):
+        var_x = 5
+        var_y = 9
+        var_z = 6
+        expected_output = 'Cat A'
+        result = cat_mouse(var_x, var_y, var_z)
+        self.assertEqual(result, expected_output)
+
+    def test_give_0_0_0_should_be_None(self):
+        var_x = 0
+        var_y = 0
+        var_z = 0
+        expected_output = None
+        result = cat_mouse(var_x, var_y, var_z)
+        self.assertIsNone(result, expected_output)
