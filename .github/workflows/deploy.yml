@@ -72,3 +72,15 @@ jobs:
         cd gridchallenge
         nose2 -v --with-coverage
         cd ..
+
+    - name: Testing StairCase
+      run: |
+        cd staircase
+        nose2 -v --with-coverage
+        cd ..
+
+    - name: Testing Cat_Mouse
+      run: |
+        cd cat_mouse
+        nose2 -v --with-coverage
+        cd ..
