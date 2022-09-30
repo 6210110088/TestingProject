@@ -60,3 +60,15 @@ jobs:
         cd caesarcipher
         nose2 -v --with-coverage
         cd ..
+
+    - name: Testing TwoChar
+      run: |
+        cd twochar
+        nose2 -v --with-coverage
+        cd ..
+        
+    - name: Testing GridChallenge
+      run: |
+        cd gridchallenge
+        nose2 -v --with-coverage
+        cd ..
