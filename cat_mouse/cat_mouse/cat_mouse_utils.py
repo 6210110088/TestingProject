@@ -1,4 +1,4 @@
-def cat_and_mouse(x: int, y: int, z: int) -> str:
+def cat_mouse(x: int, y: int, z: int) -> str:
     if not ((1<=x<=100) and (1<=y<=100) and (1<=z<=100)):
         return
     
